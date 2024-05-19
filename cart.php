@@ -17,7 +17,14 @@ header("location: customerlogin.php");
   <link rel="stylesheet" type = "text/css" href ="css/bootstrap.min.css">
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
+  <style>
+    body {
+      background-image: url('images/cart_img.jpg'); /* Provide the correct path to your image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  </style>
   <body>
 
   
