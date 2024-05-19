@@ -110,8 +110,8 @@
                     <div class="form-group">
                         <label for="category">Category:</label>
                         <select class="form-control" id="category" name="category" required="">
-                            <option value="veg">Vegetarian</option>
-                            <option value="non_veg">Non-Vegetarian</option>
+                            <option value="Vegetarian">Vegetarian</option>
+                            <option value="Non-Vegetarian">Non-Vegetarian</option>
                         </select>
                     </div>
 

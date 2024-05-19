@@ -1,5 +1,8 @@
 <?php
 session_start();
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 if (!isset($_SESSION['login_user2'])) {
     header("location: customerlogin.php");
@@ -16,10 +19,10 @@ $veg_filter = isset($_POST['veg_filter']) ? $_POST['veg_filter'] : '';
 $sql = "SELECT * FROM FOOD WHERE options = 'ENABLE'";
 
 // Apply veg/non-veg filter
-if ($veg_filter == 'veg') {
-    $sql .= " AND category = 'veg'";
-} elseif ($veg_filter == 'non_veg') {
-    $sql .= " AND category = 'non_veg'";
+if ($veg_filter == 'Vegetarian') {
+    $sql .= " AND category = 'Vegetarian'";
+} elseif ($veg_filter == 'Non-Vegetarian') {
+    $sql .= " AND category = 'Non-Vegetarian'";
 }
 
 // Apply sorting
@@ -201,8 +204,8 @@ $result = mysqli_query($conn, $sql);
                 <label for="veg_filter">Filter:</label>
                 <select name="veg_filter" class="form-control" id="veg_filter">
                     <option value="all" <?php if ($veg_filter == 'all') echo 'selected'; ?>>All</option>
-                    <option value="veg" <?php if ($veg_filter == 'veg') echo 'selected'; ?>>Vegetarian</option>
-                    <option value="non_veg" <?php if ($veg_filter == 'non_veg') echo 'selected'; ?>>Non-Vegetarian</option>
+                    <option value="Vegetarian" <?php if ($veg_filter == 'Vegetarian') echo 'selected'; ?>>Vegetarian</option>
+                    <option value="Non-Vegetarian" <?php if ($veg_filter == 'Non-Vegetarian') echo 'selected'; ?>>Non-Vegetarian</option>
                 </select>
             </div>
             <button type="submit" class="btn btn-primary">Apply</button>

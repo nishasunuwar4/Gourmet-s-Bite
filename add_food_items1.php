@@ -1,7 +1,9 @@
 <?php
 
 include('session_m.php');
-
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 if(!isset($login_session)){
 header('Location: managerlogin.php'); 
 }
@@ -22,7 +24,7 @@ $R_ID = $R_IDrs['R_ID'];
 
 $images_path = $conn->real_escape_string($_POST['images_path']);
 
-$query = "INSERT INTO FOOD(name,price,description,R_ID,images_path) VALUES('" . $name . "','" . $price . "','" . $description . "','" . $R_ID ."','" . $images_path . "')";
+$query = "INSERT INTO FOOD(name,price,description,R_ID,images_path,category) VALUES('" . $name . "','" . $price . "','" . $description . "','" . $R_ID ."','" . $images_path ."','" .$category. "')";
 $success = $conn->query($query);
 
 if (!$success){
