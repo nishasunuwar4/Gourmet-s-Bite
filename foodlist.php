@@ -47,7 +47,19 @@ $result = mysqli_query($conn, $sql);
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
-
+<style>
+    .jumbotron, .panel {
+        background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+      }
+      .navbar-inverse {
+        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+        border-color: rgba(0, 0, 0, 0.8);
+      }
+      .navbar-inverse .navbar-brand, 
+      .navbar-inverse .navbar-nav > li > a {
+        color: #fff;
+      }
+ </style>
 <body>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">

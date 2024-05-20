@@ -10,7 +10,7 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <style>
     body {
-      background-image: url('images/login_up.png'); /* Provide the correct path to your image */
+      background-image: url('images/managerlog-2.png'); /* Provide the correct path to your image */
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -230,7 +230,7 @@
 
   <footer class="container-fluid bg-4 text-center">
   <br>
-  <p> Food Exploria 2024 | &copy All Rights Reserved </p>
+  <p> Gourmet's Bite 2024 | &copy All Rights Reserved </p>
   <br>
   </footer>
 </html>

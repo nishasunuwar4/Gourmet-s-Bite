@@ -54,6 +54,17 @@ session_start();
       z-index: 1;
       color: white;
     }
+    .jumbotron, .panel {
+        background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+      }
+      .navbar-inverse {
+        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+        border-color: rgba(0, 0, 0, 0.8);
+      }
+      .navbar-inverse .navbar-brand, 
+      .navbar-inverse .navbar-nav > li > a {
+        color: #fff;
+      }
   </style>
 </head>
 
@@ -169,7 +180,6 @@ session_start();
       <div class="col-xs-5 line">
         <hr>
       </div>
-      <div class="tagline">Online Food Order System</div>
     </div>
 
     <div class="orderblock">

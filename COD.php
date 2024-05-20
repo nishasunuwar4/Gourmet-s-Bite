@@ -19,7 +19,25 @@ unset($_SESSION["cart"]);
   <link rel="stylesheet" type = "text/css" href ="css/bootstrap.min.css">
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
+  <style>
+    body {
+      background-image: url('images/order_p.png'); /* Provide the correct path to your image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .jumbotron, .panel {
+        background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+      }
+      .navbar-inverse {
+        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+        border-color: rgba(0, 0, 0, 0.8);
+      }
+      .navbar-inverse .navbar-brand, 
+      .navbar-inverse .navbar-nav > li > a {
+        color: #fff;
+      }
+  </style>
   <body>
 
   
@@ -64,8 +82,6 @@ unset($_SESSION["cart"]);
             <li><a href="index.php">Home</a></li>
             <li><a href="aboutus.php">About</a></li>
             <li><a href="contactus.php">Contact Us</a></li>
-            <li><a href="track_detail.php">Track your Order</a></li>
-
           </ul>
 
 <?php
@@ -152,7 +168,7 @@ else {
 
 <h3 class="text-center"> <strong>Your Order Number:</strong> <span style="color: blue;"><?php echo "$number"; ?></span> </h3>
 <h2 class="text-center">We will deliver within 30 min</h2>
-<h2 class="text-center"> contact NO:12345 </h2>
+<h2 class="text-center"> Contact no. : 9818765432 </h2>
 
 
 

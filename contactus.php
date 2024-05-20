@@ -19,6 +19,17 @@ session_start();
       background-repeat: no-repeat;
       background-attachment: fixed;
     }
+    .jumbotron, .panel {
+        background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+      }
+      .navbar-inverse {
+        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+        border-color: rgba(0, 0, 0, 0.8);
+      }
+      .navbar-inverse .navbar-brand, 
+      .navbar-inverse .navbar-nav > li > a {
+        color: #fff;
+      }
   </style>
   <body>
 
@@ -199,5 +210,9 @@ $conn->close();
 
      </body>
 
-  
+<footer class="container-fluid bg-4 text-center">
+  <br>
+  <p> Gourmet's Bite 2024 | &copy All Rights Reserved </p>
+  <br>
+  </footer>
 </html>

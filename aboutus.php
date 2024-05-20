@@ -53,13 +53,23 @@ session_start();
       font-size: 2em;
       font-weight: bold;
     }
+    .jumbotron, .panel {
+        background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+      }
+      .navbar-inverse {
+        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+        border-color: rgba(0, 0, 0, 0.8);
+      }
+      .navbar-inverse .navbar-brand, 
+      .navbar-inverse .navbar-nav > li > a {
+        color: #fff;
+      }
   </style>
 
   <body>
   
     <video autoplay muted loop class="video-background">
       <source src="images/about_vid.mp4" type="video/mp4">
-      Your browser does not support the video tag.
     </video>
 
     <div class="content">

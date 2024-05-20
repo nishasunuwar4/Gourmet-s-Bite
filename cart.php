@@ -19,11 +19,22 @@ header("location: customerlogin.php");
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <style>
     body {
-      background-image: url('images/cart_img.jpg'); /* Provide the correct path to your image */
+      background-image: url('images/cart.png'); /* Provide the correct path to your image */
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
     }
+    .jumbotron, .panel {
+        background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+      }
+      .navbar-inverse {
+        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+        border-color: rgba(0, 0, 0, 0.8);
+      }
+      .navbar-inverse .navbar-brand, 
+      .navbar-inverse .navbar-nav > li > a {
+        color: #fff;
+      }
   </style>
   <body>
 

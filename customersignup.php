@@ -211,4 +211,9 @@
     </div>
     </div>
     </body>
+    <footer class="container-fluid bg-4 text-center">
+  <br>
+  <p> Gourmet's Bite 2024 | &copy All Rights Reserved </p>
+  <br>
+  </footer>
 </html>
