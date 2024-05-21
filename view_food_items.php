@@ -130,7 +130,7 @@ header('Location: managerlogin.php'); // Redirecting To Home Page
       <div class="form-area" style="padding: 0px 100px 100px 100px;">
         <form action="" method="POST">
         <br style="clear: both">
-          <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px;"> YOUR FOOD ITEMS LIST </h3>
+          <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px; color: white;"> YOUR FOOD ITEMS LIST </h3>
 
 
 <?php
@@ -150,7 +150,7 @@ if (mysqli_num_rows($result) > 0)
   ?>
 
   <table class="table table-striped">
-    <thead class="thead-dark">
+    <thead class="thead-dark" style="color:white">
       <tr>
         <th>  </th>
         <th> Food ID </th>
