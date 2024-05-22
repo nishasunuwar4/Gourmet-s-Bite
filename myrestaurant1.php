@@ -1,6 +1,9 @@
 <?php
 
 include('session_m.php');
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 if(!isset($login_session)){
 header('Location: managerlogin.php'); 
