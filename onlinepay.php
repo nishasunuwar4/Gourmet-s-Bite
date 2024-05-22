@@ -168,36 +168,46 @@ else {
                                 <h5 class="text-muted"> Credit Card Number</h5>
                             </div>
                             <div class="col-md-3 col-sm-3 col-xs-3">
-                                <input type="text" class="form-control" placeholder="0000" required="" />
+                                <input type="text" class="form-control" placeholder="0000" maxlength="4" oninput="restrictToFourDigits(this)" required="" />
                             </div>
                             <div class="col-md-3 col-sm-3 col-xs-3">
-                                <input type="text" class="form-control" placeholder="0000" required="" />
+                                <input type="text" class="form-control" placeholder="0000" maxlength="4" oninput="restrictToFourDigits(this)" required="" />
                             </div>
                             <div class="col-md-3 col-sm-3 col-xs-3">
-                                <input type="text" class="form-control" placeholder="0000" required="" />
+                                <input type="text" class="form-control" placeholder="0000" maxlength="4" oninput="restrictToFourDigits(this)" required="" />
                             </div>
                             <div class="col-md-3 col-sm-3 col-xs-3">
-                                <input type="text" class="form-control" placeholder="0000" required="" />
+                                <input type="text" class="form-control" placeholder="0000" maxlength="4" oninput="restrictToFourDigits(this)" required="" />
                             </div>
                         </div>
+                        <script>
+                          function restrictToFourDigits(input) {
+                          input.value = input.value.replace(/\D/g, '').slice(0, 4);
+                          }
+                        </script>
                         <br>
                         <div class="row ">
                             <div class="col-md-3 col-sm-3 col-xs-3">
                                 <span class="help-block text-muted small-font"> Expiry Month</span>
-                                <input type="text" class="form-control" placeholder="MM" required="" />
+                                <input type="text" class="form-control" placeholder="MM" maxlength="2" oninput="restrictToFourDigits(this)" required="" />
                             </div>
                             <div class="col-md-3 col-sm-3 col-xs-3">
                                 <span class="help-block text-muted small-font">  Expiry Year</span>
-                                <input type="text" class="form-control" placeholder="YY" required="" />
+                                <input type="text" class="form-control" placeholder="YYYY" maxlength="4" oninput="restrictToFourDigits(this)" required="" />
                             </div>
                             <div class="col-md-3 col-sm-3 col-xs-3">
                                 <span class="help-block text-muted small-font">  CCV</span>
-                                <input type="text" class="form-control" placeholder="CCV" required="" />
+                                <input type="text" class="form-control" placeholder="CCV" maxlength="3" oninput="restrictToFourDigits(this)" required="" />
                             </div>
                             <div class="col-md-3 col-sm-3 col-xs-3"><br>
                                 <img src="images/creditcard.png" class="img-rounded" required="" />
                             </div>
                         </div>
+                        <script>
+                          function restrictToFourDigits(input) {
+                          input.value = input.value.replace(/\D/g, '').slice(0, 4);
+                          }
+                        </script>
                         <br>
                         <div class="row ">
                             <div class="col-md-12 pad-adjust">
